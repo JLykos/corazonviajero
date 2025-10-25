@@ -27,8 +27,7 @@
     <div class="container py-5">
       <div class="row justify-content-center py-5">
         <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-          <h1 class="display-3 text-white mb-3 animated slideInDown">MENSAJE GRANDE</h1>
-          <p class="fs-4 text-white mb-4 animated slideInDown">MENSAJE PEQUEÑO</p>
+          <h1 class="display-3 text-white animated slideInDown">Servicios</h1>
         </div>
       </div>
     </div>
@@ -36,40 +35,9 @@
 </div>
   <!-- Navbar & Hero End -->
 
-
-  <!-- About Start -->
-  <div id="about"></div>
-  <!-- About End -->
-
-
   <!-- Service Start -->
   <div id="servicios"></div>
   <!-- Service End -->
-
-
-  <!-- Destination Start -->
-  <div id="destinos-populares"></div>
-  <!-- Destination Start -->
-
-
-  <!-- Package Start -->
-  <div id="paquetes"></div>
-  <!-- Package End -->
-
-
-  <!-- Booking Start -->
-  <div id="agendar"></div>
-  <!-- Booking Start -->
-
-
-  <!-- Process Start -->
-  <div id="proceso"></div>
-  <!-- Process Start -->
-
-
-  <!-- Team Start -->
-  <div id="team"></div>
-  <!-- Team End -->
 
 
   <!-- Testimonial Start -->
@@ -142,53 +110,11 @@
               document.getElementById('nav-hero').innerHTML = data;
           })
 
-      fetch('includes/about.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('about').innerHTML = data;
-          })
-
       fetch('includes/servicios.html')
           .then(response => response.text()) // Convertimos la respuesta a texto
           .then(data => {
               // Insertamos el contenido de menu.html dentro del div
               document.getElementById('servicios').innerHTML = data;
-          })
-
-      fetch('includes/destinos-populares.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('destinos-populares').innerHTML = data;
-          })
-
-      fetch('includes/paquetes.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('paquetes').innerHTML = data;
-          })
-
-      fetch('includes/agendar.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('agendar').innerHTML = data;
-          })
-
-      fetch('includes/proceso.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('proceso').innerHTML = data;
-          })
-
-      fetch('includes/team.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('team').innerHTML = data;
           })
 
       fetch('includes/footer.html')

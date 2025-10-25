@@ -27,30 +27,13 @@
     <div class="container py-5">
       <div class="row justify-content-center py-5">
         <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-          <h1 class="display-3 text-white mb-3 animated slideInDown">MENSAJE GRANDE</h1>
-          <p class="fs-4 text-white mb-4 animated slideInDown">MENSAJE PEQUEÑO</p>
+          <h1 class="display-3 text-white animated slideInDown">Paquetes</h1>
         </div>
       </div>
     </div>
   </div>
 </div>
   <!-- Navbar & Hero End -->
-
-
-  <!-- About Start -->
-  <div id="about"></div>
-  <!-- About End -->
-
-
-  <!-- Service Start -->
-  <div id="servicios"></div>
-  <!-- Service End -->
-
-
-  <!-- Destination Start -->
-  <div id="destinos-populares"></div>
-  <!-- Destination Start -->
-
 
   <!-- Package Start -->
   <div id="paquetes"></div>
@@ -65,49 +48,6 @@
   <!-- Process Start -->
   <div id="proceso"></div>
   <!-- Process Start -->
-
-
-  <!-- Team Start -->
-  <div id="team"></div>
-  <!-- Team End -->
-
-
-  <!-- Testimonial Start -->
-  <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-      <div class="text-center">
-        <h6 class="section-title bg-white text-center text-primary px-3">Testimonios</h6>
-        <h1 class="mb-5">Nuestros clientes hablan por nosotros</h1>
-      </div>
-      <div class="owl-carousel testimonial-carousel position-relative">
-        <div class="testimonial-item bg-white text-center border p-4">
-          <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-          <h5 class="mb-0">John Doe</h5>
-          <p>New York, USA</p>
-          <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-        </div>
-        <div class="testimonial-item bg-white text-center border p-4">
-          <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-          <h5 class="mb-0">John Doe</h5>
-          <p>New York, USA</p>
-          <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-        </div>
-        <div class="testimonial-item bg-white text-center border p-4">
-          <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-          <h5 class="mb-0">John Doe</h5>
-          <p>New York, USA</p>
-          <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-        </div>
-        <div class="testimonial-item bg-white text-center border p-4">
-          <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-          <h5 class="mb-0">John Doe</h5>
-          <p>New York, USA</p>
-          <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Testimonial End -->
         
 
   <!-- Footer Start -->
@@ -142,27 +82,6 @@
               document.getElementById('nav-hero').innerHTML = data;
           })
 
-      fetch('includes/about.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('about').innerHTML = data;
-          })
-
-      fetch('includes/servicios.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('servicios').innerHTML = data;
-          })
-
-      fetch('includes/destinos-populares.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('destinos-populares').innerHTML = data;
-          })
-
       fetch('includes/paquetes.html')
           .then(response => response.text()) // Convertimos la respuesta a texto
           .then(data => {
@@ -182,13 +101,6 @@
           .then(data => {
               // Insertamos el contenido de menu.html dentro del div
               document.getElementById('proceso').innerHTML = data;
-          })
-
-      fetch('includes/team.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('team').innerHTML = data;
           })
 
       fetch('includes/footer.html')
