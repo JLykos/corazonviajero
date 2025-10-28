@@ -37,7 +37,29 @@
 
 
   <!-- About Start -->
-  <div id="about"></div>
+    <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+          <div class="position-relative h-100">
+            <img class="img-fluid" src="img/logo1.png" alt="" style="object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <h6 class="section-title bg-white text-start text-primary pe-3">Sobre nosotros</h6>
+          <h1 class="mb-4"><span class="text-primary"><i>Storytime</i></span></h1>
+          <p class="mb-4" style="text-align: justify;">Cuando era niña, de varios viajes por Venezuela, <b>LA SELVA AMAZÓNICA</b> fue el primer destino en dejarme maravillada 💘, nunca antes había estado tan desconectada de mis cosas para estar conectada con la Naturaleza 🌱 cada día de ese viaje se quedó marcado por el resto de mi vida en mi corazón, LA PAZ que sentía en cada uno de esos viajes en curiara, los tepuyes, la lluvia, las cascadas caudalosas, el cielo estrellado, las comunidades indígenas, acampar, simplemente es algo que no tienen sentido, explicación ni comparación con nada, no sé, pero hubo un antes y un después de esa travesía. Se volvió un viaje espiritual, como si me fueran lavado el alma, la persona que se fue no es la misma que volvió, nunca antes había sentido tan de cerca el AMOR DE DIOS en su maravillosa creación como lo es <b>LA MADRE NATURALEZA</b> 🦋.<br>
+            <ul style="text-align: justify;">
+              <li>Desde ahí en adelante, se volvió un sueño para mi conocer distintos destinos,</li>
+              <li>Desde ahí en adelante mi vida cambió y se me multiplicaron los viajes,</li>
+              <li>Desde ahí en adelante cada destino al que voy me siento feliz y agradecida,</li>
+              <li>y desde allí en adelante me gustaría que cada persona en el planeta experimente esa Paz y ese Amor porque te lo mereces ❤‍🩹🍃,</li>
+              <li>Así que aquí estoy, para servirles, soy @Ma_Conde y desde @CorazonViajero_Vzla es un privilegio para mi invitarte a vivir esa experiencia de maravillosa que Dios tiene para ti viajando a tu destino soñado. ¿Aceptas? ✈</p></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
   <!-- About End -->
 
 
@@ -76,13 +98,6 @@
           .then(data => {
               // Insertamos el contenido de menu.html dentro del div
               document.getElementById('nav-hero').innerHTML = data;
-          })
-
-      fetch('includes/about.html')
-          .then(response => response.text()) // Convertimos la respuesta a texto
-          .then(data => {
-              // Insertamos el contenido de menu.html dentro del div
-              document.getElementById('about').innerHTML = data;
           })
 
       fetch('includes/team.html')
