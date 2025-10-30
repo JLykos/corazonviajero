@@ -11,44 +11,85 @@
           </div>
           <div class="col-md-6">
             <h1 class="text-white mb-4">Book A Tour</h1>
-            <form>
+            <form method="post" action="https://forms.un-static.com/forms/4bf9a60df4bf648c8f736e65239e0f7dbaab7488">
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="text" class="form-control bg-transparent" id="name" placeholder="Tu nombre">
-                    <label for="name">Tu nombre</label>
+                    <input type="text" class="form-control bg-transparent" name="Nombre" id="name" placeholder="Tu nombre" required>
+                    <label for="name">Nombre y apellido</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control bg-transparent" name="Cedula" id="Cedula" placeholder="Cedula" required>
+                    <label for="Cedula">Cedula</label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-floating">
+                    <input type="number" class="form-control bg-transparent" name="Edad" id="Edad" placeholder="Edad" required value="0" min="0">
+                    <label for="Edad">Edad</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating date">
+                    <input type="date" class="form-control bg-transparent datepicker-input" name="nacimiento" id="nacimiento" placeholder="F. Nacimiento" data-target="#date3" data-toggle="datetimepicker" required>
+                    <label for="nacimiento">F. Nacimiento</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="email" class="form-control bg-transparent" id="email" placeholder="Tu email">
-                    <label for="email">Tu email</label>
+                    <input type="text" class="form-control bg-transparent" name="Ocupación" id="Ocupacion" placeholder="Ocupación" required>
+                    <label for="Ocupacion">Ocupación</label>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-floating date" id="date3" data-target-input="nearest">
-                    <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Fecha & hora" data-target="#date3" data-toggle="datepicker" />
-                    <label for="datetime">Fecha y hora</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
+                <div class="col-9">
                   <div class="form-floating">
-                    <select class="form-select bg-transparent" id="select1">
-                      <option value="1">Cubiro</option>
-                      <option value="2">Cayo Sal</option>
-                      <option value="3">Madrid</option>
+                    <input type="text" class="form-control bg-transparent" name="Destino" placeholder="Destino" id="Destino" required></input>
+                    <label for="Destino">Destino soñado con Corazón Viajero</label>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="form-floating">
+                    <input type="number" class="form-control bg-transparent" name="Soñadores" placeholder="Soñadores" id="Soñadores" value="1" min="1" required></input>
+                    <label for="Soñadores">Soñadores</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control bg-transparent" name="Telefono" id="Telefono" placeholder="Telefono" required>
+                    <label for="Telefono">Teléfono</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control bg-transparent" name="Instagram" id="Instagram" placeholder="Instagram">
+                    <label for="Instagram">Instagram</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <select class="form-select bg-transparent" name="nadar" id="select1">
+                      <option value="Si" selected>Si</option>
+                      <option value="No">No</option>
                     </select>
-                    <label for="select1">Destino</label>
+                    <label for="select1">¿Sabe nadar?</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                    <label for="message">Requisito adicional</label>
+                    <input type="text" class="form-control bg-transparent" name="condicion" placeholder="condicion" id="condicion"></input>
+                    <label for="condicion">Condición, enfermedad o alergia</label>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-outline-light disabled w-100 py-3" type="submit">Reservar</button>
+                  <div class="form-floating">
+                    <input type="text" class="form-control bg-transparent" name="encuentro" placeholder="encuentro" id="encuentro" required></input>
+                    <label for="encuentro">Punto de encuentro para buscar a los soñadores</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-outline-light w-100 py-3" type="submit">Reservar</button>
                 </div>
               </div>
             </form>
