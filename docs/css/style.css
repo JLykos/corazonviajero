@@ -441,3 +441,18 @@
     padding-right: 0;
     border-right: none;
 }
+
+/*
+ * CSS Corregido y más específico 
+ * para el borde de texto en el carrusel.
+ */
+
+.carousel-caption.text-outline p {
+    
+    /* El efecto de borde negro */
+    text-shadow: 
+        -1px -1px 0 #000,  /* Sombra superior-izquierda */
+         1px -1px 0 #000,  /* Sombra superior-derecha */
+        -1px  1px 0 #000,  /* Sombra inferior-izquierda */
+         1px  1px 0 #000;  /* Sombra inferior-derecha */
+}
